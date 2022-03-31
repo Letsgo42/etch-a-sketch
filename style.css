@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Codystar&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(95, 95, 86);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-content {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h1 {
+    text-align: center;
+    /*font-family: 'Fredericka the Great', cursive;*/
+    font-family: 'Codystar', cursive;
+    color: khaki;
+    font-size: 6em;
+    text-shadow:rgba(253, 241, 108, 0.8) 1px 1px 4px;
+
+}
+
+.form {
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-family:'Indie Flower', cursive;
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+
+.size {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2em;
+}
+
+.draw {
+    font-size: 1.8em;
+    margin-left: 30px;
+    padding: 0 0.6em;
+    font-family: 'Indie Flower', cursive;
+}
+
+.container {
+    width: 960px;
+    max-width: 960px;
+    height: 960px;
+    max-height: 960px;
+    display : grid;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: whitesmoke;
+}
+
+.item {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid azure;
+}
+
+.buttons {
+    margin-top: 500px;
+    margin-bottom: 150px;
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    font-weight: 900;
+    box-shadow: 2px 2px rgb(200,200,200);
+}
+
+.clear {
+    margin-bottom: 80px;
+}
+
+.eraser {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 4px 3px rgba(0,0,0,0.2);
+}
+
+.disco {
+    background-color: rgb(200, 0, 200);
+    color: white;
+    box-shadow: 1px 5px 30px rgb(200,0,200);
+}
+
+.darker {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 1px 5px 30px black;
+}
+
+.lighter {
+    box-shadow: 1px 5px 30px white;
+}
+
+.disco, .darker, .lighter {
+    justify-self: flex-end;
+}
